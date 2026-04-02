@@ -1,14 +1,9 @@
-# Webpack Starter Template
+# Responsive Homepage
 
-Basic Webpack 5 setup for small JavaScript projects.
+Responsive hompage made with webpack 
 
-How to use it:
 
-1. Click the green "Use this template" button on GitHub
-2. Create your new repository
-3. Clone your new repository to your computer
-
-Then in the terminal:
+Terminal commands:
 
 npm install     ← Install dependencies
 npx eslint src/ ← Check your code with ESlint
