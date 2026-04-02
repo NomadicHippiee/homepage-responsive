@@ -30,6 +30,7 @@ body {
   font-size: 18px;
 }
 
+
 .hero {
   display: block;
   position: relative;
@@ -117,6 +118,7 @@ main h3 {
   border-radius: 3px;
   padding-bottom: 24px;
   box-shadow: var(--shadow);
+  min-width: 320px;
 }
 
 .card-info {
@@ -135,10 +137,37 @@ main h3 {
 
 .img-container {
   padding: 20% 10px;
-
   font-size: 36px;
-  min-width: 320px;
   color: var(--color-primary);
+}
+
+footer {
+  background-color: var(--color-secondary);
+  font-size: 18px;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+footer h5 {
+  font-size: 36px;
+  padding-top: 24px;
+}
+
+footer p {
+  margin: 15px auto;
+  text-align: left;
+  padding: 0px 15px;
+}
+
+footer .small {
+  font-size: 16px;
+}
+
+footer img {
+  width: 100%;
+  min-width: 320px;
+  margin-top: 24px;
+  bottom: 0;
 }
 
 .one {
