@@ -1,9 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #0891b2;
+  --color-text: #565656;
+  --color-headings: #000000;
+  --shadow: 4px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 1920px;
+  min-height: 100%;
   margin: 0 auto;
-  font-family: system-ui, sans-serif;
-  background: #f8f9fa;
-  min-height: 100vh;
+  font-family: "Playfair Display", serif;
+  background-color: var(--color-primary);
+}
+
+.hero {
+  display: block;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background-color: var(--color-secondary);
+  position: absolute;
+  transform: skewY(-11deg);
+  width: 100%;
+  height: 80%;
+  top: -250px;
+  left: 0;
+  z-index: -1;
+  box-shadow: var(--shadow)
+
+}
+
+.img-wrap {
+  position: relative;
+  width: 290px;
+  margin: 25px auto;
+}
+
+.img-wrap h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  margin: 0;
+  text-align: left;
+  font-size: 46px;
+  text-shadow: -5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.hero-img {
+  display: block;
+  width: 290px;
+  box-shadow: var(--shadow);
+  border-radius: 3px;
+}
+
+.hero-about {
+  text-align: center;
+  padding: 24px;
+}
+
+.hero-about h2 {
+  font-size: 36px;
+}
+
+.hero-about p {
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.icon-container {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin: 24px auto;
+}
+
+i {
+  font-size: 24px;
 }
