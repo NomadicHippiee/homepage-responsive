@@ -96,6 +96,10 @@ body {
   cursor: pointer;
 }
 
+.devicon-linkedin-plain {
+  color: #000000;
+}
+
 .icon-container img {
   width: 25px;
 }
@@ -232,6 +236,26 @@ footer img {
     width: 45%;
     max-width: 350px;
     margin: 0;
+  }
+
+  footer {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+  }
+  footer div {
+    flex: 1;
+    margin: 24px;
+  }
+
+  .contact .icon-container {
+    justify-content: left;
+  }
+
+  footer img {
+    max-width: 320px;
+    margin: 24px; 
+    flex: 1;
   }
 }
 
